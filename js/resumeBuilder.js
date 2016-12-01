@@ -3,13 +3,12 @@
 	"role" : "Software Developer",
 	"contacts" : {
 		"mobile" : "917-912-3711",
-		"email" : "yw1420@nyu.edu",//my computer doesn't show any character
-		//"github" : "Ada's github",
+		"email" : "yw1420@nyu.edu",
 		"location" : "New York"
 	},
-	"welcomeMessage" : "Seeking for software engineer position. Working experience on Web application development. Major of computer engineering at master's level with experience in both software and hardware. Advanced on basic computer science knowledge and sogtware design.",
-	"skills" : ["JavaScript", "HTML", "CSS", "Java", "JSON", "AJAX"],
-	"biopic" : "images/Ada.jpg"
+	"welcomeMessage" : "Seeking for software engineer position. Working experience on Web application development. Major of computer engineering at master's level with experience in both software and hardware. Advanced on basic computer science knowledge and software design.",
+	"skills" : ["JavaScript", "HTML", "CSS", "Java", "Python", "MySQL"],
+	"biopic" : "images/adawen.jpg"
  };
 
  var education = {
@@ -18,7 +17,7 @@
 			"location" : "New York",
 			"degree" : "master",
 			"majors" : ["Computer Engineering"],
-			"dates" : "Sempterber, 2013 - May, 2015",
+			"dates" : "Sempterber 2013 - May 2015",
 			"url" : "http://www.nyu.edu/"
 		},
 		{
@@ -26,13 +25,13 @@
 			"location" : "China",
 			"degree" : "Bachelor",
 			"majors" : ["Engineering in Testing and Control Technologies Instrument"],
-			"dates" : "Sempterber, 2009 - June, 2013",
+			"dates" : "Sempterber 2009 - June 2013",
 			"url" : "http://iao.nuaa.edu.cn/"
 		}],
 	"onlineCourses" : [{
 			"title" : "Front-End Web Developer",
 			"school" : "Udacity", 
-			"dates" : "July, 2016", 
+			"dates" : "In Process", 
 			"url" : "https://www.udacity.com/"
 		}]
  };
@@ -42,37 +41,36 @@
 			"employer" : "CloudParticle",
 			"title" : "Front-end Developer",
 			"location" : "MountainView, California",
-			"dates" : "May, 2016 - now",
-			"description" : "Develop Web Application for start-up companies. Design and develop the layout using CSS3 and HTML5. Design and implement webpage effect using JavaScript/ jQuery. Write application level code to interact with APIs, Web services using AJAX. Optimize the website timing and layout. Communicate with clients to improve the user interface."
-		},
-		{
-			"employer" : "Green Light Career Inc",
-			"title" : "Software Developer",
-			"location" : "Queens, New York",
-			"dates" : "August, 2015 - May, 2016",
-			"description" : "Developed and maintain the front-end functionality of websites. Developed web application with JavaScript, HTML and CSS. Tested web applications. Fetched data from server based on description created by users. Displayed the query with table on excel."
+			"dates" : "May 2016 - present",
+			"description" : ["Work for various clients to help them build and simplify their systems.", "Rebuild internal system for financial company so they can record their client’s information and track their bill details.", "Help them simplify their system, design webpage functions in JavaScript and link with back-end applications by JSON and AJAX with error handling. Optimized critical rendering path to improve page speed.", "Designed UI for start-up company. Create user-friendly website in e-commerce platform in CSS5, Bootstrap and HTML5. Fully response to accommodate different screen width, from mobile up to desktop.", "Work on mongoDB, manually update data in database."]
 		},
 		{
 			"employer" : "Professor Artan's Lab at NYU",
 			"title" : "Design Volunteer",
 			"location" : "New York, New York",
-			"dates" : "January - May, 2014",
-			"description" : "Generated simulation vectors using Python based on circuits and specific algorithm to do test. Performed data analysis by using machine learning tools such as MSTLAB."
+			"dates" : "January - May 2014",
+			"description" : ["Generated simulation vectors using Python based on circuits and specific algorithm to do test.", "Performed data analysis by using machine learning tools such as MSTLAB."]
 		}]
  };
  
  var projects = {
 	 "projects" : [{
+			"title" : "Neighborhood Map (HTML, CSS, Bootstrap, JavaScript, Knockout.js)",
+			"dates" : "November 2016",
+			"description" : ["Developed a full-page map which contains Manhattan’s museum information based on Knockout.js Framework.", "User can view each museum’s image, address, website (retrieved from Google API) and latest New York Times news (retrieved by AJAX request to NYT API).", "Good response to different devices."],
+			"images" : [""]
+		},
+		{
 			"title" : "Classic Arcade Game - Frogger Game (HTML, CSS, JavaScript)",
-			"dates" : "April - May, 2016",
-			"description" : "Built the classic Frogger game wich has several enemies in different speeds and a player can choose different features. Designed object-Oriented Programming for enemies and players by JavaScript. Timed games in limited time, loaded iamges and game loop functionality. Designed the game UI with HTML5 and CSS3.",
-			"images" : ["images/game.png"]
+			"dates" : "October 2016",
+			"description" : ["Built the classic Frogger game wich has several enemies in different speeds and a player can choose different features.", "Designed object-Oriented Programming for enemies and players by JavaScript.", "Timed games in limited time, loaded iamges and game loop functionality.", "Designed the game UI with HTML5 and CSS3."],
+			"images" : [""]
 		},
 		{
 	        "title" : "Web Crawler with Focused Crawling Strategy(Python)",
-			"dates" : "January - February, 2015",
-			"description" : "Contacted Google Search Engine with Google AJAX Search API. Parsed url links and words in web pages with BeautifulSoup, using BM25 algorithm to calculate url's relevance score. Stored url-score pair into a max-heap data structure. Downloaded page with highest score everytime using urlib Module. Outputted files contain standard metadata: url, visited time , word-length.",
-			"images" : ["images/programming.jpg"]
+			"dates" : "February 2015",
+			"description" : ["Contacted Google Search Engine with Google AJAX Search API.", "Parsed url links and words in web pages with BeautifulSoup, using BM25 algorithm to calculate url's relevance score.", "Stored url-score pair into a max-heap data structure. Downloaded page with highest score everytime using urlib Module.", "Outputted files contain standard metadata: url, visited time , word-length."],
+			"images" : [""]
 		}]
  };
 
@@ -145,8 +143,10 @@
 		$('.work-entry:last').append(formattedWorkDates);
 		var formattedWorkLocation = HTMLworkLocation.replace(data, job.location);
 		$('.work-entry:last').append(formattedWorkLocation);
-		var formattedWorkDescription = HTMLworkDescription.replace(data, job.description);
-		$('.work-entry:last').append(formattedWorkDescription);
+		//var formattedWorkDescription = HTMLworkDescription.replace(data, job.description);
+		for(var i = 0; i < job.description.length; i ++){
+			$('.work-entry:last').append("<li>" + job.description[i] + "</li>");
+		}
      });
  };
  
@@ -157,8 +157,11 @@
 		$('.project-entry:last').append(formattedProjectTitle);
 		var formattedProjectDates = HTMLprojectDates.replace(data, project.dates);
 		$('.project-entry:last').append(formattedProjectDates);
-		var formattedProjectDescription = HTMLprojectDescription.replace(data, project.description);
-		$('.project-entry:last').append(formattedProjectDescription);
+		//var formattedProjectDescription = HTMLprojectDescription.replace(data, project.description);
+		for(var t = 0; t < project.description.length; t ++){
+			$('.project-entry:last').append("<li>" + project.description[t] + "</li>");
+		}
+		//$('.project-entry:last').append(formattedProjectDescription);
 		for(var img = 0; img < project.images.length; img ++){
 			var formattedProjectImage = HTMLprojectImage.replace(data, project.images[img]);
 			$('.project-entry:last').append(formattedProjectImage);
