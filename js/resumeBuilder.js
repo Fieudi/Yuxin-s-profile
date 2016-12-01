@@ -63,13 +63,13 @@
 		{
 			"title" : "Classic Arcade Game - Frogger Game (HTML, CSS, JavaScript)",
 			"dates" : "October 2016",
-			"description" : ["Built the classic Frogger game wich has several enemies in different speeds and a player can choose different features.", "Designed object-Oriented Programming for enemies and players by JavaScript.", "Timed games in limited time, loaded iamges and game loop functionality.", "Designed the game UI with HTML5 and CSS3."],
+			"description" : ["Built the classic Frogger game including several enemies in different speeds and with different features.", "Designed object – oriented programming for enemies and players using JavaScript.", "Built a timer in game, loaded images and game loop functionality.", "Designed the game UI with HTML5 and CSS3."],
 			"images" : [""]
 		},
 		{
 	        "title" : "Web Crawler with Focused Crawling Strategy(Python)",
 			"dates" : "February 2015",
-			"description" : ["Contacted Google Search Engine with Google AJAX Search API.", "Parsed url links and words in web pages with BeautifulSoup, using BM25 algorithm to calculate url's relevance score.", "Stored url-score pair into a max-heap data structure. Downloaded page with highest score everytime using urlib Module.", "Outputted files contain standard metadata: url, visited time , word-length."],
+			"description" : ["Interfaced Google Search Engine with Google AJAX Search API.", "Parsed url links and words in web pages with BeautifulSoup, using BM25 algorithm to calculate url's relevance score.", "Stored url-score pair into a max-heap data structure. Downloaded page with highest score everytime using urlib Module.", "Outputted files contain standard metadata: url, visited time , word-length."],
 			"images" : [""]
 		}]
  };
@@ -120,14 +120,14 @@
 	 });
 	 
 	 education.onlineCourses.forEach(function(course){
+		var formattedOnlineSchool = HTMLonlineSchool.replace(data, course.school);
+		$('.education-entry:last').append(formattedOnlineSchool);
 		var formattedOnlineTitle = HTMLonlineTitle.replace(data, course.title);
 		$('.education-entry:last').append(formattedOnlineTitle);
 		var formattedOnlineDates = HTMLonlineDates.replace(data, course.dates);
 		$('.education-entry:last').append(formattedOnlineDates);
 		var formattedOnlineURL = HTMLonlineURL.replace(data, course.url);
 		$('.education-entry:last').append(formattedOnlineURL);
-		var formattedOnlineSchool = HTMLonlineSchool.replace(data, course.school);
-		$('.education-entry:last').append(formattedOnlineSchool);
 	 });
  };
  
@@ -145,7 +145,7 @@
 		$('.work-entry:last').append(formattedWorkLocation);
 		//var formattedWorkDescription = HTMLworkDescription.replace(data, job.description);
 		for(var i = 0; i < job.description.length; i ++){
-			$('.work-entry:last').append("<li>" + job.description[i] + "</li>");
+			$('.work-entry:last').append("<li class='licontent'>" + job.description[i] + "</li>");
 		}
      });
  };
@@ -159,7 +159,7 @@
 		$('.project-entry:last').append(formattedProjectDates);
 		//var formattedProjectDescription = HTMLprojectDescription.replace(data, project.description);
 		for(var t = 0; t < project.description.length; t ++){
-			$('.project-entry:last').append("<li>" + project.description[t] + "</li>");
+			$('.project-entry:last').append("<li class='licontent'>" + project.description[t] + "</li>");
 		}
 		//$('.project-entry:last').append(formattedProjectDescription);
 		for(var img = 0; img < project.images.length; img ++){
