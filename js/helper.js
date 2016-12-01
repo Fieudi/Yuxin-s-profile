@@ -31,13 +31,13 @@ var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
+var HTMLworkTitle = ' - %data%</a><br>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div><br>';
 var HTMLworkDescription = '<ul></ul>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectTitle = '<a href="#">%data%</a><br>';
 var HTMLprojectDates = '<div class="date-text">%data%</div><br>';
 var HTMLprojectDescription = '<ul></ul>';
 var HTMLprojectImage = '<img src="%data%">';

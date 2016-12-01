@@ -58,19 +58,22 @@
 			"title" : "Neighborhood Map (HTML, CSS, Bootstrap, JavaScript, Knockout.js)",
 			"dates" : "November 2016",
 			"description" : ["Developed a full-page map which contains Manhattan’s museum information based on Knockout.js Framework.", "User can view each museum’s image, address, website (retrieved from Google API) and latest New York Times news (retrieved by AJAX request to NYT API).", "Good response to different devices."],
-			"images" : [""]
+			"images" : [""],
+			"url" : "https://fieudi.github.io/New-York-Museum-Map-/"
 		},
 		{
 			"title" : "Classic Arcade Game - Frogger Game (HTML, CSS, JavaScript)",
 			"dates" : "October 2016",
 			"description" : ["Built the classic Frogger game including several enemies in different speeds and with different features.", "Designed object – oriented programming for enemies and players using JavaScript.", "Built a timer in game, loaded images and game loop functionality.", "Designed the game UI with HTML5 and CSS3."],
-			"images" : [""]
+			"images" : [""],
+			"url" : "https://fieudi.github.io/New-York-Museum-Map-/"
 		},
 		{
 	        "title" : "Web Crawler with Focused Crawling Strategy(Python)",
 			"dates" : "February 2015",
 			"description" : ["Interfaced Google Search Engine with Google AJAX Search API.", "Parsed url links and words in web pages with BeautifulSoup, using BM25 algorithm to calculate url's relevance score.", "Stored url-score pair into a max-heap data structure. Downloaded page with highest score everytime using urlib Module.", "Outputted files contain standard metadata: url, visited time , word-length."],
-			"images" : [""]
+			"images" : [""],
+			"url" : "#"
 		}]
  };
 
