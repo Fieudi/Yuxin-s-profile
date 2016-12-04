@@ -1,12 +1,3 @@
-/*
-
-This file contains all of the code running in the background that makes resumeBuilder.js possible. We call these helper functions because they support your code in this course.
-
-Don't worry, you'll learn what's going on in this file throughout the course. You won't need to make any changes to it until you start experimenting with inserting a Google Map in Problem Set 3.
-
-Cameron Pittman
-*/
-
 
 /*
 These are HTML strings. As part of the course, you'll be using JavaScript functions
@@ -89,13 +80,6 @@ $(document).click(function(loc) {
   // your code goes here!
 });
 
-
-
-/*
-This is the fun part. Here's where we generate the custom Google Map for the website.
-See the documentation below for more details.
-https://developers.google.com/maps/documentation/javascript/reference
-*/
 var map;    // declares a global map variable
 
 
